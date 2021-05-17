@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "b42c6739-6229-4607-9c0f-1f94b3fed159",
+		"name": "taco",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "calculateOrderItem",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"veggie\": 3,\r\n    \"chicken\": 1,\r\n    \"beef\": 0,\r\n    \"chorizo\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/calculateOrderItem",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"calculateOrderItem"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "calculateOrders",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tacoOrderId\" : 1,\r\n    \"tacoLocoArray\": [\r\n        {\r\n        \"tacoId\": \"1\",\r\n        \"tacoItemName\": \"veggie Taco\",\r\n        \"tacoItemQuantity\": \"4\"\r\n        },\r\n        {\r\n        \"tacoId\": \"2\",\r\n        \"tacoItemName\": \"chicken Taco\",\r\n        \"tacoItemQuantity\": \"1\"\r\n        },\r\n        {\r\n        \"tacoId\": \"3\",\r\n        \"tacoItemName\": \"beef Taco\",\r\n        \"tacoItemQuantity\": \"1\"\r\n        },\r\n        {\r\n        \"tacoId\": \"4\",\r\n        \"tacoItemName\": \"chorizo Taco\",\r\n        \"tacoItemQuantity\": \"2\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/calculateOrders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"calculateOrders"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
