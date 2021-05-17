@@ -23,7 +23,7 @@ One way is to execute the main method in the class from your IDE.
 url: http://localhost:8080/calculateOrders
 
 BODY:: JSON
-
+```
 {
 	"tacoOrderId" : 1,
 	"tacoLocoArray": [
@@ -49,16 +49,17 @@ BODY:: JSON
 		}
 	]
 }
-
+```
 
 (2) METHOD:: POST
 
 url:: http://localhost:8080/calculateOrderItem
 Body::
-
-```{
+```
+{
 	"veggie" : 4,
 	"chicken" : 1,
 	"beef": 0,
  	"chorizo": 1
-}```
+}
+```
