@@ -17,7 +17,7 @@ One way is to execute the main method in the class from your IDE.
 - Choose the Spring Boot Application file (search for @SpringBootApplication)
 - Right Click on the file and Run as Java Application
 
-API CALLBACK INSTRUCTIONS
+# API CALLBACK INSTRUCTIONS
 
 (1)  METHOD:: POST
 url: http://localhost:8080/calculateOrders
@@ -56,9 +56,9 @@ BODY:: JSON
 url:: http://localhost:8080/calculateOrderItem
 Body::
 
-{
+```{
 	"veggie" : 4,
 	"chicken" : 1,
 	"beef": 0,
  	"chorizo": 1
-}
+}```
