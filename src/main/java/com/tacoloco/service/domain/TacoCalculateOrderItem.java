@@ -18,6 +18,9 @@ public class TacoCalculateOrderItem {
     @JsonProperty
     private int chorizo;
 
+    public TacoCalculateOrderItem(int veggie, int chicken, int beef, int chorizo) {
+    }
+
     /**
      * @return the veggie
      */
